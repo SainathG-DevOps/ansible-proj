@@ -4,4 +4,4 @@
   tasks:
     - name: Print the variable
       ansible.builtin.debug:
-        msg: "Hi team, I am from {{Shop}}, {{branch}}, {{city}}, {{district}}, {{state}}"
+        msg: "Hi team, I am from {{shop}}, {{branch}}, {{city}}, {{district}}, {{state}}"
