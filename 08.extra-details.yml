@@ -4,4 +4,4 @@
   tasks:
     - name: Print the person details
       ansible.builtin.debug:
-        msg: "Hello {{person.name}}, {{phone.number}}"
+        msg: "Hello {{person}}"
