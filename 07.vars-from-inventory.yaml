@@ -1,0 +1,7 @@
+- name: Vars from Inventory
+  hosts: fronend
+  become: true
+  tasks:
+    - name: Print the variable
+      ansible.builtin.debug:
+        msg: "Hi team, I am from {{Shop}}, {{branch}}, {{city}}, {{district}}, {{state}}"
