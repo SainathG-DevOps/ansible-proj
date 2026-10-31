@@ -1,5 +1,5 @@
 - name: Vars from Inventory
-  hosts: fronend
+  hosts: frontend
   become: true
   tasks:
     - name: Print the variable
