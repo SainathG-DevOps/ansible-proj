@@ -1,0 +1,11 @@
+- firstName: "medikit"
+  owner: "medplus"
+  doi: "10-31-26"
+  address:
+    - landmark: "proddutur cinehub"
+      Road: "Bypass"
+    - landmark: "Gandhi road"
+      Road: "Service road"
+  stock: 
+      price: "100"
+      label: "gold"

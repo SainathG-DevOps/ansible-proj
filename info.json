@@ -11,5 +11,10 @@
             "landmark": "Gandhi road",
             "Road": "Service road"
         }
-    ]
+    ],
+
+    "stock": {
+        "price": "100",
+        "label": "gold"
+    }
 }
