@@ -2,5 +2,5 @@
   hosts: localhost
   connection: local
   tasks:
-    -name: Print hello Medplus
-      ansible.builtin.debug:
+  - name: Print hello Medplus
+    ansible.builtin.debug:
