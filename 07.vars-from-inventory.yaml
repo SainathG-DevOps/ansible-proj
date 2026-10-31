@@ -2,6 +2,6 @@
   hosts: frontend
   become: true
   tasks:
-    - name: Print the variable
-      ansible.builtin.debug:
-        msg: "Hi team, I am from {{shop}}, {{branch}}, {{city}}, {{district}}, {{state}}"
+  - name: Print the variable
+    ansible.builtin.debug:
+    msg: "Hi team, I am from {{shop}}, {{branch}}, {{city}}, {{district}}, {{state}}"
