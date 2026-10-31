@@ -1,0 +1,14 @@
+- name: Variables Example
+  hosts: local
+  connection: local
+  gather_facts: false
+  vars:
+    Shop: Medplus
+    branch: Gandhi road
+    city: Proddutur
+    district: Kadapa
+    state: Andhra Pradesh
+  tasks:
+    - name: Print the variable
+      ansible.builtin.debug:
+        msg: "Hi team, I am from {Shop}, {branch}, {city}, {district}, {state}"
