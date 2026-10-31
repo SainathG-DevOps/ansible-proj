@@ -1,0 +1,16 @@
+- name: variable preference
+  hosts: local
+  connection: local
+  vars:
+    Medicine: "From Play"
+  vars.prompt:
+      prompt: "Enter Medicine name"
+      private: no
+  Vars_files:
+    - Medicine.yml
+  tasks:
+    - name: Print the Medicine details
+      vars:
+        Medicine: "From Play"
+      ansible.builtin.debug:
+        msg: "Hello {{Medicine}}"
