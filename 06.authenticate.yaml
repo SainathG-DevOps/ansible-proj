@@ -1,0 +1,16 @@
+- name: Authenticate User 
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: "username"
+    prompt: "Enter the username"
+    private: false # As i want to see the username while typing, so i kept it false.
+
+  - name: "password"
+    prompt: "Enter the password"
+    private: true # I want to hide the password while typing, so i kept it true.
+
+  tasks:
+    - name: print the username and password
+      ansible.builtin.debug:
+        msg: "Username: {{ username }}, Password: {{ password }}"
