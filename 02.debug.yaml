@@ -1,5 +1,5 @@
 - name: let see builtin module for debug
-  hosts: local
+  hosts: localhost
   connection: local
   tasks:
   - name: Print hello Medplus
