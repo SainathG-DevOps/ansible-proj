@@ -1,0 +1,15 @@
+- name: Branch1
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Print hello Medplus
+    ansible.builtin.debug:
+      msg: "Hello, Medplus! Gandhi raod"
+
+- name: Breanch2
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Print hello Medplus
+    ansible.builtin.debug:
+      msg: "Hello, Medplus! Bypass road"
