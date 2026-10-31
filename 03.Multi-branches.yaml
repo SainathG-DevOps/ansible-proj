@@ -1,5 +1,5 @@
 - name: Branch1
-  hosts: localhost
+  hosts: local
   connection: local
   tasks:
   - name: Print hello Medplus
