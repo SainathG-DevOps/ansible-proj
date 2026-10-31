@@ -1,6 +1,7 @@
 - name: let see builtin module for debug
-  hosts: localhost
+  hosts: local
   connection: local
   tasks:
   - name: Print hello Medplus
     ansible.builtin.debug:
+      msg: "Hello, Medplus!"
