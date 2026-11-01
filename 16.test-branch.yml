@@ -1,0 +1,13 @@
+- name: test-branch
+  hosts: local
+  connection: local
+  tasks:
+    - name: version is redhat
+      ansible.builtin.debug:
+        msg: "{{ ansible_facts }}"
+      when: ansible_facts.os_family == 'redhat'
+
+    - name: version is debian
+      ansible.builtin.debug:
+        msg: "{{ ansible_facts }}"
+      when: ansible_facts.os_family == 'debian'
