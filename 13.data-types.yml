@@ -1,0 +1,23 @@
+- name: medicine available
+  hosts:local
+  connection: local
+  vars:
+    Medicine: "From Playbook" # string data type
+    Branch: 10 days # integer data type
+    pharmula: true # mixed data type as boolean
+    formulations:  # list of formulations
+      - "Tablet"
+      - "Capsule"
+      - "Syrup"
+    more info: # dictionary of more info
+      manufacturer: "Medplus Pharma"
+      expiry: "2025-12-31"
+  tasks:
+    - name: Print the vars
+      ansible.builtin.type_debug:
+        msg: |
+          Medicine: "{{ Medicine }}"
+          Branch: "{{ Branch }}"
+          pharmula: "{{ pharmula }}"
+          formulations: "{{ formulations }}"
+          more info: "{{ more info }}"
