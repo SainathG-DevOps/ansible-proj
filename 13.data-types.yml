@@ -13,11 +13,11 @@
       manufacturer: "Medplus Pharma"
       expiry: "2025-12-31"
   tasks:
-    - name: Print the vars
-      ansible.builtin.type_debug:
+  - name: Print the vars
+    ansible.builtin.type_debug:
         msg: |
           Medicine: "{{ Medicine }}"
           Branch: "{{ Branch }}"
           pharmula: "{{ pharmula }}"
           formulations: "{{ formulations }}"
-          more info: "{{ more info }}"
+          more_info: "{{ more_info }}"
