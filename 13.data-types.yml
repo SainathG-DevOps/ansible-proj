@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    Medicine: "From Playbook" # string data type
+    Medicine: "Softeron Gold" # string data type
     Branch: 10 days # integer data type
     pharmula: true # mixed data type as boolean
     formulations:  # list of formulations
