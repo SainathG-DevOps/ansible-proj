@@ -1,5 +1,5 @@
 - name: medicine available
-  hosts:local
+  hosts: local
   connection: local
   vars:
     Medicine: "From Playbook" # string data type
