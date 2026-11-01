@@ -1,0 +1,9 @@
+- name: local
+  connection: local
+  vars:
+    given_number: 10
+  tasks:
+  - name: even number
+      ansible.builtin.debug:
+        msg: "The given number is even"
+      when: given_number % 2 == 0
