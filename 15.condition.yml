@@ -1,4 +1,5 @@
 - name: local
+  hosts: local
   connection: local
   vars:
     given_number: 10
