@@ -1,0 +1,22 @@
+- name: Print os and install nginx
+  hosts: local
+  become: true
+  connection: local
+  tasks:
+  #   - name: Print the vars
+  #     ansible.builtin.debug:
+  #       msg: |
+  #         os-family: "{{ ansible_facts.os_family }}"
+  #         private-ip: "{{ ansible_facts.default_ipv4.address }}"
+
+    - name: Install nginx
+      ansible.builtin.package:
+        name: nginx
+        state: present
+      when: ansible_facts.os_family == 'RedHat'
+
+    - name: Install nginx
+      ansible.builtin.package:
+        name: nginx
+        state: present
+      when: ansible_facts.os_family == 'Debian'
