@@ -1,7 +1,6 @@
 - name: Install packages
   hosts: localhost
   connection: local
-  wantlist: true
   vars:
     packages:
       - mysql
@@ -9,8 +8,8 @@
       - htop
       - tomcat
   tasks:
-    - name: Install packages
-      ansible.builtin.package:
-        name: "{{ item }}"
-        state: present
-      loop: packages
+  - name: Install packages
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: present
+    loop: "{{ packages }}"
