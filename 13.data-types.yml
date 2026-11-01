@@ -6,9 +6,9 @@
     Branch: 10 days # integer data type
     pharmula: true # mixed data type as boolean
     formulations:  # list of formulations
-      - "Tablet"
-      - "Capsule"
-      - "Syrup"
+      - Tablet
+      - Capsule
+      - Syrup
     more_info: # dictionary of more info
       manufacturer: "Medplus Pharma"
       expiry: "2025-12-31"
