@@ -1,0 +1,23 @@
+- name: medicine available
+  hosts: local
+  connection: local
+  vars:
+    Medicine: "Softeron Gold" # string data type
+    Branch: 10 streets # integer data type
+    pharmula: true # mixed data type as boolean
+    formulations:  # list of formulations
+      - Tablet
+      - Capsule
+      - Syrup
+    more_info: # dictionary of more info
+      manufacturer: "Medplus Pharma"
+      expiry: "2025-12-31"
+  tasks:
+  - name: Print the vars
+    debug:
+      msg: |
+        Medicine: "{{ Medicine }}:{{ Medicine | type_debug }}"
+        Branch: "{{ Branch }}:{{ Branch | type_debug }}"
+        pharmula: "{{ pharmula }}:{{ pharmula | type_debug }}"
+        formulations: "{{ formulations }}:{{ formulations | type_debug }}"
+        more_info: "{{ more_info }}:{{ more_info | type_debug }}"
