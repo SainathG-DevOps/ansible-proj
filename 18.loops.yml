@@ -1,6 +1,7 @@
 - name: Install packages
   hosts: localhost
   connection: local
+  wantlist: true
   vars:
     packages:
       - mysql
