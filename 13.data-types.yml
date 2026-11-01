@@ -9,7 +9,7 @@
       - "Tablet"
       - "Capsule"
       - "Syrup"
-    more info: # dictionary of more info
+    more_info: # dictionary of more info
       manufacturer: "Medplus Pharma"
       expiry: "2025-12-31"
   tasks:
