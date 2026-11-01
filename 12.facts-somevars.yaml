@@ -8,7 +8,6 @@
     
     - name: Print the vars
       ansible.builtin.debug:
-        msg: " {{ ansible_facts }}"
+        msg: |
         os-family: "{{ ansible_facts['os_family'] }}"
         private-ip: "{{ ansible_facts['default_ipv4']['address'] }}"
-        
