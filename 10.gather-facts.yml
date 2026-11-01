@@ -1,0 +1,7 @@
+- name: Gain facts 
+  hosts: local
+  connection: local
+  tasks:
+    - name: Gather facts
+      ansible.builtin.setup:
+        msg: " {{ ansible_facts }}"
